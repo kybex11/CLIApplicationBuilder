@@ -1,7 +1,6 @@
 ```ts
 
 //arrowSelection
-import { arrowSelector } from "@openstation/cliapplicationbuilder/src/index";
 
 arrowSelector(["mods", "play", "quit"], "Game Menu")
 
@@ -13,7 +12,6 @@ arrowSelector(["mods", "play", "quit"], "Game Menu")
 });
 
 //input
-import { input } from "@openstation/cliapplicationbuilder/src/index";
 
 input("What a your name?")
   .then(name => {
@@ -21,12 +19,10 @@ input("What a your name?")
 });
 
 //logWithTitle
-import { logWithTitle } from "@openstation/cliapplicationbuilder/src/index";
 
 logWithTitle("text", "title", true, "WARNING!!!")
 
 //question
-import { question } from "@openstation/cliapplicationbuilder/src/index";
 
 question("What a your name?", "Name Here:")
   .then(name => {
@@ -34,7 +30,6 @@ question("What a your name?", "Name Here:")
 });
 
 //selector
-import { selector } from "@openstation/cliapplicationbuilder/src/index";
 
 selector(["mods", "play", "quit"], "Game Menu", "")
   .then(number => {
@@ -43,3 +38,14 @@ selector(["mods", "play", "quit"], "Game Menu", "")
 });
 
 ```
+
+```ts
+// on ts
+import { } from "@openstation/cliapplicationbuilder/src/index";
+
+//on js
+
+const { } = require("@openstation/cliapplicationbuilder/src/dist/index");
+```
+
+# install - npm i
