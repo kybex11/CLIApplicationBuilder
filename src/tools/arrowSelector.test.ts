@@ -1,4 +1,4 @@
-import { arrowSelector } from "./tools/arrowSelector";
+import { arrowSelector } from "./arrowSelector";
 
 arrowSelector(["mods", "play", "quit"], "Game Menu")
 
