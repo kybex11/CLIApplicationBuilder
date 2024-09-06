@@ -1,6 +1,10 @@
-import { input } from "./tools/input";
+import { arrowSelector } from "./tools/arrowSelector";
 
-input("What a your name?")
-  .then(name => {
-    console.log(name);
+arrowSelector(["mods", "play", "quit"], "Game Menu")
+
+  .then(number => {
+
+    console.log(`\nYou chose: ${number}`);
+    process.exit();
+
   });
