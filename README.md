@@ -1,5 +1,9 @@
 ```ts
 
+//init project
+execInitProject();
+
+
 //arrowSelection
 
 arrowSelector(["mods", "play", "quit"], "Game Menu")
