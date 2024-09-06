@@ -1,4 +1,4 @@
-import { input } from "./tools/input";
+import { input } from "./input";
 
 input("What a your name?")
   .then(name => {
