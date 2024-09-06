@@ -4,6 +4,6 @@ import { logWithTitle } from "./tools/logWithTitle";
 import { question } from "./tools/question";
 import { selector } from "./tools/selector";
 
-import { execCreateProject } from "./execute/execCreateProject";
+import { execInitProject } from "./execute/execInitProj";
 
-export { input, arrowSelector, logWithTitle, question, selector, execCreateProject};
+export { input, arrowSelector, logWithTitle, question, selector, execInitProject};
