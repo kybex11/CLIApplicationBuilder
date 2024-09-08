@@ -10,9 +10,11 @@ const rl = readline.createInterface({
 let projectName: string | undefined;
 let currentDir: any;
 let prefix: string;
+let prefixImport: any;
+
 
 const indexExample = `
-import { input } from "@openstation/cliapplicationbuilder";
+${prefixImport}
 
 input("What a your name?")
   .then(name => {
@@ -29,8 +31,10 @@ export function execInitProject() {
        rl.question("Use TypeScript? (y/n) ", (input) => {
         if (input == "y") {
             prefix = "ts";
+            prefixImport = 'import { input } from "@openstation/cliapplicationbuilder/src/index";';
         } else if (input == "n") {
             prefix = "js";
+            prefixImport = 'const { input } from "@openstation/cliapplicationbuilder/src/dist/index"';
         }
         init();
        })
