@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@openstation/cliapplicationbuilder": "^2.1.2",
     "@types/blessed": "^0.1.25",
     "blessed": "^0.1.81",
     "inquirer": "^10.2.0",
@@ -7,7 +8,7 @@
     "typescript": "^5.5.4"
   },
   "name": "@openstation/cliapplicationbuilder",
-  "version": "2.1.1",
+  "version": "2.1.3",
   "main": "src/index.ts",
   "scripts": {
     "test": "ts-node --files src/test.ts",
@@ -16,7 +17,6 @@
   "keywords": [],
   "author": "kybex11 (openstation varnetcoding@gmail.com)",
   "license": "ISC",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kybex11/CLIApplicationBuilder.git"
