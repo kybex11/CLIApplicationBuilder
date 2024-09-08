@@ -8,7 +8,7 @@
     "typescript": "^5.5.4"
   },
   "name": "@openstation/cliapplicationbuilder",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "main": "src/index.ts",
   "scripts": {
     "test": "ts-node --files src/test.ts",

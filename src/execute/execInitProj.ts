@@ -11,7 +11,14 @@ let projectName: string | undefined;
 let currentDir: any;
 let prefix: string;
 
-const indexExample = fs.readFileSync('./examples/index.ts');
+const indexExample = `
+import { input } from "@openstation/cliapplicationbuilder";
+
+input("What a your name?")
+  .then(name => {
+    console.log("Hello, ", name);
+  });
+`
 
 export function execInitProject() {
     rl.question("Enter a project name: ", (input) => {
@@ -33,4 +40,6 @@ export function execInitProject() {
 function init() {
     fs.mkdirSync(`${currentDir}/src`);
     fs.appendFile(`${currentDir}/src/index.${prefix}`, indexExample, 'utf-8', (e)=>{});
+    console.log("\nProject created! See in next time\n");
+    process.exit();
 }

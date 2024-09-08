@@ -11,7 +11,7 @@ var rl = readline.createInterface({
 var projectName;
 var currentDir;
 var prefix;
-var indexExample = fs.readFileSync('./examples/index.ts');
+var indexExample = "\nimport { input } from \"@openstation/cliapplicationbuilder\";\n\ninput(\"What a your name?\")\n  .then(name => {\n    console.log(\"Hello, \", name);\n  });\n";
 function execInitProject() {
     rl.question("Enter a project name: ", function (input) {
         currentDir = process.cwd();
